@@ -234,3 +234,260 @@ margin-left: 40px;
     max-width: 100% ;
   
 }
+
+
+/*service section css*/
+
+.services .content .service{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.services .content .servicebx{
+    padding: 40px 20px;
+    max-width: 340px;
+    margin: 20px;
+    transition: 0.5s;
+    text-align: center;
+    background: rgb(235, 231, 231);
+}
+.services .content .servicebx:hover{
+    background: teal;
+}
+
+.services .content .servicebx img{
+    max-width: 80px;
+    transition: 0.5s;
+    max-height: 80px;
+}
+
+.services .content .servicebx h2{
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: 600;
+      transition: 0.5s;
+      color: black;
+}
+.services .content .skillbx{
+    
+    max-width: 90%;
+    margin: 20px 120px;
+    transition: 0.5s;
+    text-align: center;
+    justify-content: center;
+    background: rgb(229, 232, 238);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+.skillbx p{
+    font-size: 12px;
+    font-weight: 600;
+    margin: 5px 0;
+    padding: 0;
+    
+}
+
+
+.services .content .skillbx .container {
+   
+        width: 100%; /* Full width */
+        background-color: #ddd; /* Grey background */
+        margin: 5px 20px;
+        max-height: 20px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px  rgb(182, 179, 179);
+}
+
+      
+.services .content .skillbx .skills {
+        text-align: right; /* Right-align text */
+         border-radius: 20px;
+        color: white; /* White text color */
+        
+      
+}
+.services .content .skillbx .skills.html {width: 90%; background-color: #29c28a;} /* Green */
+.services .content .skillbx .skills.css {width: 80%; background-color: #4490e7;} /* Blue */
+.services .content .skillbx .skills.js {width: 60%; background-color: #bd186a;} /* Red */
+.services .content .skillbx .skills.php {width: 40%; background-color: #d4a919;} /* Dark Grey */
+.services .content .skillbx .skills.mysql {width: 70%; background-color: #621291;} /* Dark Grey */
+.services .content .skillbx .skills.react {width: 40%; background-color: #0b6155;} /* Dark Grey */
+.services .content .skillbx .skills.angular {width: 45%; background-color: #720a2d;} /* Dark Grey */
+
+/*work section style*/
+
+.works .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.works .content .workbx{
+    position: relative;
+    width: 265px;
+    height: 265px;
+    margin: 10px;
+    transition: 0.5s;
+    text-align: center;
+}
+.works .content .workbx .imgbx,
+.works .content .workbx .textbx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.works .content .workbx .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.works .content .workbx .textbx{
+    background: teal;
+opacity: 0;
+}
+.works .content .workbx .textbx:hover.textbx{
+    opacity: 0.9;
+}
+.works .content .workbx .textbx h3{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+}
+.contact{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact .contactform{
+    position: relative;
+    width: 700px;
+    margin-top: 20px;
+    
+}
+.contact .contactform .row {
+    width: 100%;
+    display: flex;
+}
+.contact .contactform .row .col50{
+width: 50%;
+margin: 10px;
+}
+.contact .contactform .row .col100{
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+}
+.contact .contactform .row input,textarea{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #111;
+    color: #fff;
+    font-size: 16px;
+    resize: none;
+}
+.contact .contactform .row textarea{
+    height: 100px;
+}
+
+
+.contact .contactform .row input[type="submit"]
+{
+    background: #0b6155;
+    color: #fff;
+    padding:12px 35px;
+   display: inline-block;
+   font-weight: 500;
+   letter-spacing: 2px;
+   cursor: pointer;
+   max-width: 150px;
+  
+
+}
+.copyright{
+    color: #fff;
+    background: #111;
+    text-align: center;
+
+    padding: 10px;
+}
+.copyright p{
+    margin: 0;
+    font-size: 16px;
+    color: rgb(126, 126, 126);
+}
+
+@media(max-width:991px){
+
+.banner .imgbx{
+    display: none;
+}
+.banner .contentBx,.sidebar{
+    width: 100%;
+    padding: 40px;
+}
+
+.logoText{
+    left: 40px;
+}
+.toggle{
+    right: 40px;
+}
+.sci{
+left: 40px;
+}
+section{
+    padding: 40px;
+}
+.about .content{
+    flex-direction: column;
+    margin-top: 0;
+
+}
+.about .content .textbx{
+    min-width: 100%;
+    width: 100%;
+}
+.about .content .imgbx{
+    margin-right: 0;
+}
+.services .content.servicebx{
+    padding: 30px 20px;
+    max-width: 340px;
+    margin: 10px;
+}
+.contact .contactform{
+    width: 100%;
+
+}
+.contactform .row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact .contactform .row .col50{
+    width: 100%;
+    margin: 10px;
+}
+.sidebar ul li{
+    font-size: 1.5em;
+}
+}
