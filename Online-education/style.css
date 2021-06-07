@@ -7,6 +7,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.heading{
+    font-size: 3.5rem;
+    color:rgb(30, 156, 165) ;
+    text-align: center;
+    padding: 0 1rem;
+    padding-top: 5rem;
+    letter-spacing: .6rem;
+
+}
+.title{
+    padding: 0 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 400;
+    color: rgb(255, 217, 0);
 }
 body{
     height: 3000px;
@@ -191,7 +208,56 @@ header .navbar ul li .active,
 }
 .box-container .box a button:hover{
     transform: scale(1.1);
+    color: black;
 }
+
+
+/*about css*/
+
+.about{
+    background: rgb(224, 238, 238);
+    min-height: 105vh;
+}
+.about .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .row .content{
+    padding-left: 5rem;
+    
+}
+.about .row .content p{
+
+    font-size: 1rem;
+    color: rgb(32, 32, 32);
+    line-height: 2.5rem;
+    
+}
+.about .row .content a button{
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    background: rgb(243, 210, 20);
+    color: rgb(4, 12, 12);
+    margin: 5px 0;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.253);
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-left: 40%;
+    
+}
+.about .row .content a button:hover{
+    transform: scale(1.1);
+    color: black;
+}
+.about .row .image img{
+height: 70vh;
+width: 60vw;
+}
+
+
 
 
 
@@ -237,4 +303,12 @@ header .navbar ul li .active,
         top: 6rem;
         opacity: 1;
     }
+    .home .content p{
+        padding: 1.5rem 2rem;
+    }
+    
+    .about .row{
+        flex-flow: column-reverse;
+    }
+
 }
