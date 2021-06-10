@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400;1,500&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.heading{
+    font-size: 3.5rem;
+    color:rgb(30, 156, 165) ;
+    text-align: center;
+    padding: 0 1rem;
+    padding-top: 5rem;
+    letter-spacing: .6rem;
+
+}
+.title{
+    padding: 0 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 400;
+    color: rgb(255, 217, 0);
+}
+body{
+    height: 3000px;
+}
+header{
+    width: 98%;
+    height: 50px;
+    background: rgb(30, 156, 165);
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 3rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    transition: .2s;
+}
+.header-active{
+    top: 0;
+    width: 100%;
+    border-radius: 0;
+    
+}
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+header .logo img{
+    width: 10%;
+    height: 10%;
+    margin:0 30px;
+}
+header .navbar ul li{
+    margin: 0 2rem;
+}
+
+header .navbar ul li a{
+    font-size: 1.2rem;
+    color: rgb(192, 229, 238);
+    margin-right: 2rem;
+    
+}
+
+
+
+header .navbar ul li .active,
+header .navbar ul li a:hover{
+    color: rgba(255, 238, 0, 0.979);
+   
+}
+
+
+
+
+
+
+header .fa-times{
+    transform: rotate(270deg);
+    color:ivory;
+    
+  
+}
+
+header .fa-bars{
+    color: ivory;
+    font-size: 2.5rem ;
+    cursor: pointer;
+    margin-right: 20px;
+    display: none;
+    transition:1s;
+
+}
+
+
+
+/*home css*/
+
+.home{
+  
+    min-height: 110vh;
+    position: relative;
+    background: linear-gradient(0deg,rgba(40, 165, 159, 0.473),rgba(0,0,0,.6));
+    
+}
+
+.home .content {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-top: 9rem;
+    padding-bottom: 8rem;
+    text-align: center;
+
+}
+.home .content h1{
+    font-size: 4rem;
+    
+    color: rgb(243, 210, 20);
+    padding:0 1rem;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,0.5);
+}
+.home .content p{
+    font-size: 1.2rem;
+    color: ivory;
+    padding: 20px 100px
+}
+
+.home .content a button{
+    margin-bottom: 60px;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 30px;
+    background: rgb(243, 210, 20);
+    color: rgb(16, 83, 83);
+    font-size: 1.5rem;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.315);
+}
+
+.home .content a button:hover{
+     color: rgba(255, 230, 0, 0.979);
+     background: rgba(19, 133, 127, 0.979);
+     transform: scale(1.1);
+     transition: .4s;
+}
+
+.vedio-container{
+    position: absolute;
+    top: 0;left: 0;
+    height: 110vh;
+    width: 100%;
+    z-index: -1;
+}
+.vedio-container .vid{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: none;
+}
+.vedio-container .vid1{
+    display: block;
+}
+
+.home .content .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 10rem;
+}
+
+
+.box-container .box{
+    height: 12rem;
+    width: 12rem;
+    background: rgba(255, 255, 255, 0.658);
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.438);
+    margin: 3rem;
+    cursor: pointer;
+
+}
+.box-container .box img{
+    height: 6rem;
+    width: 6rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    margin-top: 10px;
+    transition: .4s;
+
+}
+.box-container .box h3{
+    color: rgb(27, 68, 66);
+}
+.box-container .box a button{
+    padding: 3px 7px;
+    border-radius: 30px;
+    border: none;
+    background: rgb(243, 210, 20);
+    color: rgb(4, 12, 12);
+    margin: 5px 0;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.253);
+    cursor: pointer;
+    font-size: 1rem;
+}
+.box-container .box a button:hover{
+    color: rgba(255, 230, 0, 0.979);
+     background: rgba(19, 133, 127, 0.979);
+     transform: scale(1.1);
+     transition: .4s;
+}
+
+
+/*about css*/
+
+.about{
+    background: rgb(224, 238, 238);
+    min-height: 105vh;
+}
+.about .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .row .content{
+    padding-left: 5rem;
+    
+}
+.about .row .content p{
+
+    font-size: 1rem;
+    color: rgb(32, 32, 32);
+    line-height: 2.5rem;
+    
+}
+.about .row .content a button{
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    background: rgb(243, 210, 20);
+    color: rgb(4, 12, 12);
+    margin: 5px 0;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.253);
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-left: 40%;
+    
+}
+.about .row .content a button:hover{
+    color: rgba(255, 230, 0, 0.979);
+    background: rgba(19, 133, 127, 0.979);
+    transform: scale(1.1);
+    transition: .4s;
+}
+.about .row .image img{
+height: 70vh;
+width: 60vw;
+}
+
+/*course css*/
+
+
+.course .container{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    padding-top: 3rem;
+    flex-wrap: wrap;
+    margin-left: 60px;
+}
+
+.course .container .box{
+    width: 250px;
+    height: 387px;
+    margin: 3.5rem 1.3rem;
+    background: rgb(26, 145, 145);
+    text-align: center;
+    box-shadow: 5px 5px 3px 3px rgba(50, 53, 53, 0.829);
+    
+    
+    
+}
+.course .container .box:hover{
+    transform: scale(1.1);
+    transition: 1s;
+  
+}
+.course .container .box .box-content{
+    width: 220px;
+    height:360px;
+    background: rgb(243, 210, 20);
+    margin: 15px;
+    border-radius: 20px;
+    
+}
+.course .container .box .box-content i{
+margin: 10px 0;
+font-size: 2.5rem;
+color:rgb(26, 145, 145);
+}
+
+.course .container .box .box-content h3{
+    margin: 5px 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.course .container .box .box-content h4{
+    margin-bottom: 10px;
+    color: rgb(255, 0, 0);
+}
+.course .container .box .box-content p{
+    font-size: 0.9rem;
+}
+.course .container .box .box-content a button{
+    padding: 8px 25px;
+    background: rgb(26, 143, 143);
+    margin: 25px 0;
+    border-radius: 20px;
+    border: none;
+    color: oldlace;
+    font-size: 1rem;
+}
+
+/*staff css*/
+
+.staff{
+        background: rgb(224, 238, 238);
+   
+}
+.staff .card-container{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+padding: 2rem 0;
+    flex-wrap: wrap;
+    
+  
+ 
+     
+}
+.staff .card-container .card{
+  padding: 2rem;
+  margin: 2rem;
+  background: rgb(255, 255, 255);
+  text-align: center;
+  width: 20rem;
+  box-shadow: 3px 3px 3px 3px rgba(28, 148, 138, 0.486);
+  border-radius: 20px;
+}
+
+.staff .card-container .card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s;
+}
+.staff .card-container .card img{
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 2px 2px 4px 4px rgba(32, 32, 32, 0.432);
+
+}
+.staff .card-container .card h3{
+    padding-top: 10px;
+    margin: 6px 0;
+    font-size: 1.2rem;
+}
+.staff .card-container .card h4{
+font-size: .9rem;
+}
+.staff .card-container .card p{
+    font-size: .8rem;
+    margin: 10px 0;
+}
+
+/*contact css*/
+
+.contact{
+    background: rgb(35, 37, 37) url(./images/footer.jpg);
+ background-size: cover;
+}
+.contact .wrapper{
+    /*background: rgba(0, 0, 0, 0.685);*/
+    background: linear-gradient(180deg,rgba(7, 8, 8, 0.733),rgba(12, 53, 70, 0.76));
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.contact .row .form-container{
+ width: 50%;
+ padding-right: 6rem;
+ margin-left: 5%;
+ margin-top: 10px;
+ 
+}
+.contact .row .form-container input,textarea{
+    height: 2.5rem;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.589);
+    border: none;
+    border-radius: 20px;
+    padding: 0 2rem;
+    margin: 1rem 0;
+    font-size: 0.8rem;
+   
+  
+
+}
+
+.contact .row .form-container input::placeholder{
+    color: white;
+}
+
+.contact .row .form-container textarea::placeholder{
+    color: white;
+    padding-top:10px;
+}
+
+
+
+.contact .row .form-container button{
+    border: none;
+    padding: 10px 50px;
+    margin-left: 40%;
+    margin-top: 20px;
+    border-radius: 20px;
+    background: rgb(26, 143, 143);
+    color: white;
+    font-size:1rem;
+}
+.contact .row .form-container button:hover{
+
+color:rgba(19, 133, 127, 0.979);
+background: rgba(197, 180, 24, 0.979);
+transform: scale(1.1);
+transition: .4s;
+}
+.contact .row .image img{
+    width: 40vw;
+    height: 90vh;
+    margin-right: 20px;
+    margin-top:-50px;
+    
+}
+
+.contact .social-icon{
+    display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+.contact .social-icon h3{
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+}
+.contact .social-icon i{
+   
+ color: rgb(19, 231, 214);
+ font-size: 2rem;
+ margin:40px;
+
+}
+
+.contact .social-icon i:hover{
+    color: rgb(226, 196, 24);
+}
+.footer{
+    background: rgb(226, 196, 24);
+    height:3rem;
+    
+}
+.footer .credit{
+    text-align: center;
+    padding: 1rem;
+    color: rgba(32, 32, 32, 0.726);
+}
+/*media query */
+@media(max-width:768px){
+    html{
+        font-size: 55%;
+    }
+    header .fa-bars{
+        display: block;
+    }
+    header .navbar{
+        position: fixed;
+        top:-100rem;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+        background:rgb(243, 210, 20) ;
+        border-radius: 3rem;
+        opacity: 0;
+        transition: 1s linear;
+        
+    }
+    header .navbar ul{
+        flex-flow: column;
+        padding: 2rem 0;
+    }
+    header .navbar ul li{
+        margin: 1rem 0;
+        width: 100%;
+        text-align: center;
+    }
+    header .navbar ul li a{
+        font-size: 3rem;
+        color: rgb(13, 17, 17);
+
+    }
+    header .navbar ul li .active,
+    .home .content a button:hover{
+         color: rgba(19, 133, 127, 0.979);
+    }
+    header .nav-toggle{
+        top: 6rem;
+        opacity: 1;
+    }
+    .home .content p{
+        padding: 1.5rem 2rem;
+    }
+    
+    .about .row{
+        flex-flow: column-reverse;
+    }
+    .course .container .box .box-content p {
+        font-size: 1.5rem;
+    }
+    .contact .row{
+        flex-flow: column;
+    }
+    .contact .row .image img{
+        height: 50vh;
+        width: 90vw;
+    }
+    .contact .row .form-container{
+        width: 90%;
+        padding: 0;
+    }
+
+}
