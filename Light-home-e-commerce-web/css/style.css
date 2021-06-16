@@ -1,0 +1,67 @@
+/*import google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&family=Ubuntu:wght@300;400&display=swap');
+
+
+:root{
+    --gold-color:#DAA520;
+    --second-color:#00FFFF;
+    --base-color:#424040;
+    --ubuntu:"Ubuntu",sans-serif;
+    --lato:"Lato",sans-serif;
+}
+.primary-color{
+    color:var(--second-color);
+}
+.bg-primary-color{
+    background: var(--base-color);
+}
+.text-color{
+    color: var(--base-color);
+}
+.font-lato{
+    font-family: var(--lato);
+}
+.font-bold{
+    color: black;
+    font-weight: 900;
+}
+/*header styles */
+header{
+    background: var(--base-color);
+    font-family: var(--lato);
+}
+header .site-title{
+font-family: var(--ubuntu);
+}
+.container .search{
+    background: var(--base-color);
+    border-radius: 5px;
+    border: 1px solid var(--second-color);
+}
+
+.header-links a{
+color: var(--second-color);
+border: 1px solid var(--second-color);
+padding: 4px 20px;
+border-radius: 5px;
+text-decoration: none;
+float: right;
+margin: 0 5px;
+}
+ .navbar-nav{
+    margin-left: 5rem;
+    
+
+}
+.navbar-nav .nav-link{
+    margin: 0 2rem;
+    color: var(--base-color);
+    
+}
+.navbar-nav.icons{
+   margin-left: 31rem;
+}
+
+.slider-one img image{
+    min-height: 100vh;
+}
