@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&family=Ubuntu:wght@300;400&display=swap');
+
+
+:root{
+    --btn-color:#42672A;
+    --text-color:#201f1f;
+    --base-color:#DCECCF;
+    --ubuntu:"Ubuntu",sans-serif;
+    --lato:"Lato",sans-serif;
+}
+.navbar{
+    background: var(--btn-color);
+   position: fixed;
+}
+
+.font{
+    font-family:var(--lato);
+}
+.home{
+    background: url(../images/banner.png);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.home a button{
+    padding: 8px 30px;
+    border: none;
+    background: var(--btn-color);
+    border-radius: 5px;
+    color: var(--base-color);
+}
+.home a button:hover{
+    color: var(--btn-color);
+    border: 2px solid var(--btn-color);
+    background: transparent;
+}
+.detail-box{
+    min-height: 4rem;
+    position: relative;
+    margin-top: -2.5rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 5px rgba(168, 164, 164, 0.329);
+}
+.detail-box a {
+    width: 3.5rem;
+    height: 3.5rem;
+    background:var(--base-color);
+    border-radius:50px;
+}
+
+.detail-box .content{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.detail-box .content .card{
+    text-align: center;
+    padding:0 3px;
+    margin: 0 auto;
+    border: none;
+    justify-content: space-evenly;
+}
+.detail-box .content .card a{
+    margin: 0 auto;
+}
+.detail-box .content .card a i{
+   margin-top:11px;
+   font-size: 2rem;
+   color: var(--btn-color);
+}
+
+hr {
+    border: 1px dotted #ff0000;
+    border-style: none none dotted; 
+    color: rgb(10, 4, 4); 
+    background-color: rgb(29, 17, 17);
+}
+
+/*about us */
+.about .first-content .imgbx img{
+    box-shadow: 1px 1px 6px 6px rgba(192, 192, 192, 0.486);
+}
+
+.about .first-content .contentbx .card{
+    background:linear-gradient(180deg,#B8D8A0,transparent);
+    border: none;
+    font-size: .8rem;
+    text-align: center;
+    color: black;
+}
+.about .first-content .contentbx .card:nth-child(2){
+    margin-left:3rem;
+    }
+.about .first-content .contentbx .card:nth-child(3){
+margin-left: 6rem;
+}
+.about .first-content .contentbx .card:nth-child(4){
+    margin-left: 9rem;
+    }
+.about .second-content h2{
+    text-align: right;
+    color:#70A151
+}
+.about .second-content p{
+    text-align: end;
+}
+.about .second-content img{
+    width: 100%;
+margin-left: 1rem;
+}
