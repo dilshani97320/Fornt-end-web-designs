@@ -8,6 +8,7 @@
     --ubuntu:"Ubuntu",sans-serif;
     --lato:"Lato",sans-serif;
 }
+
 .navbar{
     background: var(--btn-color);
    position: fixed;
@@ -25,7 +26,7 @@
 }
 
 .home a button{
-    padding: 8px 30px;
+    padding: 10px 40px;
     border: none;
     background: var(--btn-color);
     border-radius: 5px;
@@ -103,7 +104,8 @@ margin-left: 6rem;
     }
 .about .second-content h2{
     text-align: right;
-    color:#70A151
+    color:#70A151;
+    font-size: 2.5rem;
 }
 .about .second-content p{
     text-align: end;
@@ -113,7 +115,8 @@ margin-left: 6rem;
 margin-left: 1rem;
 }
 .construction h3{
-    color:#70A151
+    color:#70A151;
+    font-size: 2.5rem;
 }
 .construction .row{
     justify-content: center;
@@ -163,7 +166,8 @@ margin-left: 1rem;
 /*feedbabck*/
 
 .features h3{
-    color:#70A151
+    color:#70A151;
+    font-size: 2.5rem;
 }
 
 
@@ -248,8 +252,59 @@ margin-left: 1rem;
 }
 
 
+/*feedback style*/
+
+.feedback h3{
+    color:#70A151;
+font-size: 2.5rem;
+    margin: 2rem 0;
+}
+.feedback{
+    background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+}
+
+.feedback .swiper-container {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    
+  }
+
+  .feedback .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+   
+  }
+  .feedback .swiper-slide .card{
+  box-shadow: 1px 1px 2px 2px rgba(156, 155, 155, 0.486);
+  }
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right{
+    background: none;
+}
 
 
+
+
+
+
+/*footer*/
+footer{
+    background: var(--btn-color);
+}
+footer .form-control::-webkit-input-placeholder {
+    color: rgb(255, 255, 255);
+  }
+
+  
+
+  
 @media only screen and (max-width: 700px) {
     .construction h1 {
     font-size:2rem;
