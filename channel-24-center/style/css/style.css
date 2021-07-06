@@ -1,0 +1,258 @@
+
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Arvo:wght@700&family=Coustard:wght@400;900&family=Fira+Sans:wght@400;500&family=Fredoka+One&family=Josefin+Sans&family=Rubik:wght@500&family=Ubuntu:wght@300;400&display=swap');
+
+
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+:root{
+  
+    --text-color:#201f1f;
+    --staff-color:#E5EFFF;
+    --btn-color:#4DB7EC;
+    --about-color:#F3F8FF;
+    --head-color:#4C4C4D;
+    --ubuntu: 'Ubuntu', sans-serif;
+   --font-family1: 'ABeeZee', sans-serif;;
+  
+}
+
+.head{
+    font-family: 'Ubuntu', sans-serif;
+}
+.logo{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+header .home h1{
+  font-family: var(--font-family1);
+  color: var(--head-color);
+  font-size: 2.7rem;
+}
+
+header .home h3{
+    font-family: var(--font-family1);
+    
+    font-size:1.8rem;
+    
+  }
+  header .home a button{
+     margin-top: 2rem;
+      color: black;
+      background: var(--btn-color);
+      padding: 10px 2rem;
+      border-radius: 50px;
+      font-weight: 500;
+  }
+  .about{
+      background: var(--about-color);
+      
+      
+  }
+  .about h2{
+      font-size: 6rem;
+      font-family: 'Fredoka One', cursive;
+      
+      letter-spacing:0.6rem;
+      color: rgba(0, 0, 0, 0.103);
+      padding-top: 2rem;
+  }
+  .about .text{
+      padding-right:5rem;
+  }
+  .about .text h1{
+      font-family: var(--ubuntu);
+      color: var(--btn-color);
+  }
+  .about .text p{
+      line-height:2rem;
+  }
+  .about .text a button{
+    margin-top: 2rem;
+     color: black;
+     background: var(--btn-color);
+     padding: 10px 2.5rem;
+     border-radius: 50px;
+     float: right;
+     font-weight: 500;
+ }
+
+ .about .site-slider{
+    position: relative;
+    background: var(--btn-color);
+    min-height: 40vh;
+    margin-top: 3rem;
+    width: 90%;
+    margin-left: 2rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 10px rgba(85, 83, 83, 0.185);
+    
+}
+.about .site-slider .slider-one img{
+    
+    margin: 1rem auto;
+    box-shadow: 1px 1px 4px 4px rgba(85, 83, 83, 0.103);
+    border-radius: 10px;
+}
+.position-top{
+    position: absolute;
+   top: 50%;
+}
+.about .site-slider .slider-btn .prev,
+.about .site-slider .slider-btn .next{
+   
+    font-size: 25px;
+  margin-right: 1.1rem;
+  
+    color: white;
+}
+.right-0{
+    right: 0;
+}
+
+/*services*/
+
+.service h1{
+    font-family: var(--ubuntu);
+    color: var(--btn-color);
+}
+.service p{
+    line-height:2rem;
+}
+.service .card .icon{
+    width: 4rem;
+    height: 4rem;
+     border-radius:50%;
+      background: var(--btn-color);
+      margin: 0 auto;
+      margin-top: 15px;
+      border: none;
+      
+}
+.service .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.service .card{
+    margin: 2rem auto;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 10px rgba(83, 85, 85, 0.13);
+}
+.service .card h4{
+    color:rgb(77, 74, 74);
+    font-family:var(--ubuntu);
+    font-weight: 700;
+    
+}
+.service .card i{
+    font-size: 2rem;
+    padding: 1rem 0.8rem;
+}
+.service .card p{
+    
+    
+   line-height:1.3rem;
+    
+}
+
+/*staff*/
+.staff{
+    background: var(--staff-color);
+   
+}
+
+.staff h1{
+    font-family: var(--ubuntu);
+    color: var(--btn-color);
+}
+.staff .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.staff .card{
+    background: transparent;
+    border: none;
+    margin: 2.5rem auto;
+}
+.staff .card .img1{
+    position: relative;
+    top: 0;
+    width: 90%;
+    
+    
+}
+
+.staff .card a{
+    background: var(--btn-color);
+}
+ 
+/*feedback*/
+.feedback h1{
+    font-family: var(--ubuntu);
+    color: var(--btn-color);
+    margin-left: 3rem;
+}
+.feedback h2{
+    font-size: 3.5rem;
+      font-family: 'Fredoka One', cursive;
+      
+      letter-spacing:0.3rem;
+      color: rgba(0, 0, 0, 0.103);
+      padding: 2rem 0;
+}
+
+
+.feedback .site-slider .card{
+margin: 3.5rem 4rem;
+}
+
+.feedback .site-slider .card img{
+
+    width:5rem;
+    height:5rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+
+
+.feedback .site-slider{
+    position: relative;
+    background: var(--btn-color);
+    min-height: 50vh;
+    margin-top: 1rem;
+    width: 100%;
+    margin-left: 2rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px 7px rgba(85, 83, 83, 0.185);
+    
+}
+
+
+
+.position-top{
+    position: absolute;
+   top: 50%;
+}
+.feedback .site-slider .slider-btn .prev,
+.feedback .site-slider .slider-btn .next{
+   
+    font-size: 24px;
+ margin: auto 15px;
+  
+    color:var(--about-color);
+}
+.right-0{
+    right: 0;
+}
+
+/*footer*/
+
+footer{
+    background: var(--btn-color);
+}
